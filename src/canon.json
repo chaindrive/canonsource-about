@@ -1,0 +1,212 @@
+{
+    "name": "Canon Source Schema Documentation",
+    "authors": ["Canon Source Project"],
+    "published": 2025,
+    "characters": [
+        {
+            "name": "Schema Designer",
+            "aliases": ["JSON Schema Author", "Data Structure Architect"]
+        },
+        {
+            "name": "Canon Author",
+            "aliases": ["Story Creator", "Content Developer"]
+        },
+        {
+            "name": "Schema Validator",
+            "aliases": ["Data Validator", "Structure Enforcer"]
+        }
+    ],
+    "perspectives": [
+        {
+            "id": "technical-perspective",
+            "valid-from": "Schema creation",
+            "valid-to": "Schema evolution"
+        },
+        {
+            "id": "user-perspective", 
+            "valid-from": "Schema adoption",
+            "valid-to": "Schema maturity"
+        }
+    ],
+    "places": [
+        {
+            "id": "schema-repository",
+            "created": "Project inception",
+            "description": "The canonical source schema repository containing the master JSON schema definition"
+        },
+        {
+            "id": "implementation-space",
+            "created": "Schema adoption",
+            "description": "Various projects and implementations that utilize the canon source schema"
+        }
+    ],
+    "compendia": [
+        {
+            "id": "schema-purpose",
+            "valid-from": "Project inception",
+            "valid-to": "Project completion",
+            "facts": [
+                {
+                    "fact": "The Canon Source Schema provides a standardized JSON Schema for representing canonical story structures."
+                },
+                {
+                    "fact": "The schema enables consistent documentation of fictional universes, stories, and narratives."
+                },
+                {
+                    "fact": "The schema supports complex temporal relationships through date formats and translations."
+                },
+                {
+                    "fact": "The schema allows for multiple narrative perspectives within the same canonical work."
+                },
+                {
+                    "fact": "The schema organizes story elements into characters, places, compendia, and series for comprehensive coverage."
+                }
+            ]
+        },
+        {
+            "id": "schema-structure",
+            "valid-from": "Schema design",
+            "valid-to": "Schema finalization",
+            "facts": [
+                {
+                    "fact": "The schema defines required fields including name, authors, published date, characters, perspectives, places, compendia, and series."
+                },
+                {
+                    "fact": "Characters can have roles, aliases, and lifecycle events (born, died, activated, deactivated)."
+                },
+                {
+                    "fact": "Places have creation and destruction timelines with descriptive text."
+                },
+                {
+                    "fact": "Compendia organize thematic collections of facts with validity periods."
+                },
+                {
+                    "fact": "Individual facts within compendia can have their own validity periods for fine-grained temporal control."
+                },
+                {
+                    "fact": "Series contain episodes with events and facts, enabling episodic storytelling."
+                },
+                {
+                    "fact": "The schema supports date formats and cross-references between different temporal systems."
+                }
+            ]
+        },
+        {
+            "id": "schema-benefits", 
+            "valid-from": "Schema implementation",
+            "valid-to": "Ongoing usage",
+            "facts": [
+                {
+                    "fact": "The schema ensures data consistency across different canonical works and implementations."
+                },
+                {
+                    "fact": "The schema enables automated validation of canonical story data."
+                },
+                {
+                    "fact": "The schema facilitates interoperability between different canon source projects."
+                },
+                {
+                    "fact": "The schema provides a foundation for building tools and applications that work with canonical story data."
+                },
+                {
+                    "fact": "The schema supports both simple and complex storytelling structures through its flexible design."
+                },
+                {
+                    "fact": "The schema enables fine-grained temporal control with validity periods at both compendium and individual fact levels."
+                },
+                {
+                    "fact": "The schema uses 'compendia' terminology to better reflect thematic organization of knowledge folios."
+                },
+                {
+                    "fact": "Early versions of the schema used 'volumes' terminology before adopting 'compendia'.",
+                    "valid-from": "Schema inception",
+                    "valid-to": "Terminology update"
+                },
+                {
+                    "fact": "The current schema version supports individual fact-level temporal validity.",
+                    "valid-from": "Temporal enhancement update"
+                }
+            ]
+        }
+    ],
+    "series": [
+        {
+            "id": "schema-development-series",
+            "as-of": "Project inception", 
+            "thru-to": "Schema maturity",
+            "default-perspective": "technical-perspective",
+            "compendia": [
+                "schema-purpose",
+                "schema-structure", 
+                "schema-benefits"
+            ],
+            "episodes": [
+                {
+                    "id": "schema-creation-episode",
+                    "valid-from": "Project inception",
+                    "valid-to": "Initial schema completion",
+                    "default-perspective": "technical-perspective",
+                    "facts": [
+                        {
+                            "fact": "The Canon Source Schema was designed to address the need for standardized canonical story representation."
+                        }
+                    ],
+                    "events": [
+                        {
+                            "event": "Project team identifies the need for a standardized schema for canonical story data."
+                        },
+                        {
+                            "event": "Analysis of existing story structures and narrative patterns is conducted."
+                        },
+                        {
+                            "event": "Core schema requirements are defined including characters, places, and temporal relationships."
+                        },
+                        {
+                            "event": "JSON Schema format is selected as the implementation technology."
+                        },
+                        {
+                            "event": "Schema structure is designed with required and optional fields for maximum flexibility."
+                        },
+                        {
+                            "event": "Initial schema validation is performed against sample canonical works."
+                        },
+                        {
+                            "event": "Schema documentation and examples are created for user adoption."
+                        }
+                    ]
+                },
+                {
+                    "id": "schema-validation-episode",
+                    "valid-from": "Schema testing phase",
+                    "valid-to": "Schema refinement completion", 
+                    "default-perspective": "user-perspective",
+                    "facts": [
+                        {
+                            "fact": "The schema undergoes extensive testing with real canonical works like Hansel and Gretel."
+                        }
+                    ],
+                    "events": [
+                        {
+                            "event": "Schema is applied to classic fairy tales to validate its effectiveness."
+                        },
+                        {
+                            "event": "Edge cases and complex story structures are tested against the schema."
+                        },
+                        {
+                            "event": "User feedback is collected from early adopters and implementers."
+                        },
+                        {
+                            "event": "Schema refinements are made based on real-world usage patterns."
+                        },
+                        {
+                            "event": "Additional optional fields are added to support diverse storytelling needs."
+                        },
+                        {
+                            "event": "Schema validation tools and utilities are developed for user convenience."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
